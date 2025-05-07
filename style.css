@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+	user-select: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #474747;
+}
+
+.container {
+    background: url(/material/images/coding-css-background.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #75914a;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header h1 {
+    color: #463f18;
+    font-size: 30px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    padding: 0 20px;
+    gap: 50px;
+}
+
+.icons {
+    display: flex;
+    gap: 50px;
+}
+
+img {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+
+.semesters {
+    display: block;
+    justify-content: center;
+    width: 20%;
+    height: 55%;
+    background-color: #2d542f;
+    padding: 50px 50px 0 40px;
+    box-shadow: #75914a 0px 0px 10px;
+    border-radius: 10px;
+    border: #8dad5d solid 2px;
+    animation: fadeIn2 1s infinite alternate;
+    overflow: hidden;
+    overflow-y: auto;
+    max-height: 300px;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+    scrollbar-color: #8dad5d #2d542f;
+}
+
+.semesters h2 {
+    margin: 0 0 20px 0;
+    color: #b49f23;
+    animation: fadeIn 1s infinite ease-in-out alternate;
+}
+
+.semesters h2:hover {
+    color: #8dad5d;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    text-shadow: 0px 0px 10px #8dad5d;
+}
+
+.semesters:hover {
+    transform: translateY(20px);
+    transition: 0.5s ease-out;
+    animation: none;
+    margin-bottom: 50px;
+}
+
+.semesters:not(:hover) {
+    animation: fall 0.5s ease-in forwards;
+}
+
+.semesters:hover h2 {
+    transition: 1s ease-in-out;
+    animation: none;
+}
+
+.semesters-list {
+    list-style: none;
+    padding: 0;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.semesters-list li {
+    background-color: #8dad5d;
+    color: #000000;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.semesters-list li:hover {
+    background-color: #000000;
+    color: #8dad5d;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    text-shadow: 0px 0px 10px #8dad5d;
+}
+
+.semesters-list a {
+    text-decoration: none;
+    color: #2301ff;
+}
+
+.projects {
+    display: block;
+    justify-content: center;
+    width: 20%;
+    height: 55%;
+    background-color: #2d542f;
+    padding: 50px 50px 0 40px;
+    box-shadow: #75914a 0px 0px 10px;
+    border-radius: 10px;
+    border: #8dad5d solid 2px;
+    animation: fadeIn2 1s infinite alternate;
+    overflow: hidden;
+    overflow-y: auto;
+    max-height: 300px;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+    scrollbar-color: #8dad5d #2d542f;
+}
+
+.projects h2 {
+    margin: 0 0 20px 0;
+    color: #b49f23;
+    animation: fadeIn 1s infinite ease-in-out alternate;
+}
+
+.projects h2:hover {
+    color: #8dad5d;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    text-shadow: 0px 0px 10px #8dad5d;
+}
+
+.projects:hover {
+    transform: translateY(20px);
+    transition: 0.5s ease-out;
+    animation: none;
+    margin-bottom: 50px;
+}
+
+.projects:not(:hover) {
+    animation: fall 0.5s ease-in forwards;
+}
+
+.projects:hover h2 {
+    transition: 1s ease-in-out;
+    animation: none;
+}
+
+.project-list {
+    list-style: none;
+    padding: 0;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-list li {
+    background-color: #8dad5d;
+    color: #000000;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.project-list li:hover {
+    background: #000000;
+    color: #8dad5d;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    text-shadow: 0px 0px 10px #8dad5d;
+}
+
+.project-list a {
+    text-decoration: none;
+    color: #2301ff;
+}
+
+.video-footer {
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+    overflow: hidden;
+}
+
+.video-footer video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.footer-content {
+    position: absolute;
+    height: 40%;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    color: #fff;
+    font-size: large;
+}
+
+.about-me h2 {
+    color: #51ff01;
+}
+
+.about-me p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.video-footer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(35, 35, 35, 0.5);
+    z-index: -1;
+}
+
+@keyframes fadeIn {
+	0% {
+		text-shadow: 0px 0px 5px #8dad5d;
+	}
+	100% {
+		text-shadow: 0px 0px 10px #5b6f3c;
+	}
+}
+
+@keyframes fadeIn2 {
+	0% {
+		box-shadow: #75914a 0px 0px 10px;
+	}
+	100% {
+		box-shadow: #75914a 0px 0px 20px;
+	}
+}
+
+@keyframes fall {
+	0% {
+		transform: translateY(0px);
+	}
+	100% {
+		transform: translateY(20px);
+	}
+}
+
+
+@media (min-width: 1700px) {
+    main {
+        height: 100vh;
+    }
+
+    .semesters {
+        width: 30%;
+        height: 50%;
+        padding: 20px 20px 5px 20px;
+    }
+
+    .projects {
+        width: 30%;
+        height: 50%;
+        padding: 20px 20px 5px 20px;
+    }
+
+    .about-me p {
+        font-size: 20px;
+        line-height: 2;
+    }
+
+    .footer-content {
+        height: 100%;
+        top: 90%;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1200px) {
+    main {
+        height: 100vh;
+    }
+
+    .semesters {
+        width: 30%;
+        height: 50%;
+        padding: 20px 20px 5px 20px;
+    }
+
+    .projects {
+        width: 30%;
+        height: 50%;
+        padding: 20px 20px 5px 20px;
+    }
+
+    .about-me p {
+        font-size: 15px;
+        line-height: 2;
+    }
+
+    .footer-content {
+        height: 60%;
+        top: 50%;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .video-footer video {
+        width: 100%;
+        height: 100%;
+    }
+
+    .header {
+        height: 50px;
+        width: 100%;
+    }
+
+    .header h1 {
+        font-size: 20px;
+    }
+
+    main {
+        height: 90vh;
+        gap: 20px;
+    }
+
+    .icons {
+        gap: 20px;
+    }
+
+    img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .semesters {
+        width: 40%;
+        height: 50%;
+        padding: 20px 20px 5px 20px;
+    }
+
+    .semesters h2 {
+        font-size: 10px;
+    }
+
+    .semesters-list li {
+        font-size: 8px;
+        width: 90px;
+    }
+
+    .projects {
+        width: 40%;
+        height: 50%;
+        padding: 20px 20px 5px 20px;
+    }
+
+    .projects h2 {
+        font-size: 10px;
+    }
+
+    .project-list li {
+        font-size: 8px;
+        width: 90px;
+    }
+
+    .about-me p {
+        font-size: 10px;
+        line-height: 1.5;
+    }
+
+    .footer-content {
+        top: 50%;
+        font-size: 20px;
+    }
+}

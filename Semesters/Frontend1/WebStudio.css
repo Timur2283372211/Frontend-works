@@ -1,0 +1,257 @@
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+    background-color: #ffffff;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+	position: fixed;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	background-color: #ffffff;
+	gap: 20px;
+}
+
+.navbar {
+	display: flex;
+	align-items: center;
+	gap: 70px;
+}
+
+.navbar h1 span {
+	color: #2196F3;
+}
+
+.navbar ul {
+	list-style: none;
+	display: flex;
+	gap: 60px;
+}
+
+.navbar a {
+	color: #757575;
+	text-decoration: none;
+}
+
+.navbar a:hover {
+	color: #2196F3;
+	transition: 1s;
+}
+
+.info {
+	margin: 0 150px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 30px;
+}
+
+.info p {
+	color: #757575;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+.info p:hover {
+	color: #2196F3;
+	transition: 1s;
+}
+
+section:first-child {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+    width: 100%;
+    height: 700px;
+    background-color: #2F303A;
+}
+
+section:first-child h1 {
+	color: #ffffff;
+	font-size: 60px;
+	text-align: center;
+}
+
+section:first-child button {
+	font-size: 16px;
+	width: 216px;
+	height: 50px;
+	color: #ffffff;
+	background: #2196F3;
+	border-radius: 4px;
+	border: none;
+	cursor: pointer;
+}
+
+section:first-child button:hover {
+	background: #1976D2;
+	transition: 1s;
+}
+
+section:nth-child(2) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	height: 900px;
+	background-color: #ffffff;
+}
+
+.cards:first-child {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	width: 100%;
+	height: 60%;
+	background-color: #ffffff;
+	gap: 20px;
+}
+
+.cards:first-child .card{
+	width: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.images {
+	width: 100%;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 80px;
+}
+
+section:nth-child(2) div {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+}
+
+section:nth-child(2) h2 {
+	color: #000000;
+	font-size: 60px;
+	text-align: center;
+}
+
+section:nth-child(3) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	height: 900px;
+	background: #F5F4FA;
+}
+
+section:nth-child(3) h2 {
+	color: #000000;
+	font-size: 40px;
+	text-align: center;
+}
+
+.cards:last-child{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	width: 100%;
+	height: 60%;
+	background-color: #F5F4FA;
+	gap: 30px;
+}
+
+.cards:last-child .card{
+	background: #ffffff;
+	height: 60%;
+	width: 18%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.cards:last-child .card p:nth-child(2n) {
+	color: #757575;
+}
+
+.cards:last-child .card p {
+	text-align: center;
+}
+
+.cards:last-child .card div {
+	display: block;
+}	
+
+footer {
+	padding-left: 200px;
+	padding-top: 40px;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 300px;
+	background-color: #2F303A;
+	gap: 10px;
+}
+
+footer ul {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	display: flex;
+	gap: 20px;
+}
+
+footer ul li {
+	color: #757575;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+footer ul li:first-child {
+	color: #ffffff;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+footer ul li:hover {
+	color: #2196F3;
+	transition: 1s;
+}
+
+footer h1 {
+	margin-left: 40px;
+	color: #ffffff;
+}
+
+footer h1 span {
+	color: #2196F3;
+}
