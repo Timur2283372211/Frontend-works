@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-    background: url(/material/images/coding-css-background.jpg);
+    background: url(./material/images/coding-css-background.jpg);
     width: 100%;
     height: 100vh;
     background-size: cover;
